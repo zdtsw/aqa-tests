@@ -628,6 +628,7 @@ testJavaVersion()
 	fi
 	if [ -x ${_java} ]; then
 		echo "Run ${_java} -version"
+		ls -lat ${_java}
 		echo "=JAVA VERSION OUTPUT BEGIN="
 		${_java} -version
 		echo "=JAVA VERSION OUTPUT END="
