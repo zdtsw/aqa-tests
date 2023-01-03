@@ -627,8 +627,13 @@ testJavaVersion()
 		_release=${TEST_JDK_HOME}/build/release
 	fi
 	if [ -x ${_java} ]; then
+		echo "DEBUG WEN: start"
+		pwd
+		ls -lat ${_java} ${_release}
+		echo "TEST_JDK_HOME is set to ${TEST_JDK_HOME}"
+		
+		echo "DEBUG WEN: done"
 		echo "Run ${_java} -version"
-		ls -lat ${_java}
 		echo "=JAVA VERSION OUTPUT BEGIN="
 		${_java} -version
 		echo "=JAVA VERSION OUTPUT END="
